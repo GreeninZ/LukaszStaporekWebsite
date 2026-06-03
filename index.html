@@ -56,7 +56,6 @@
     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="#" class="active"><i class="bi bi-house navicon"></i>Strona Główna</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> O mnie</a></li>
         <li><a href="#Umiejetnosci"><i class="bi bi-pc-display navicon"></i> Umiejętności</a></li>
         <li><a href="#Doswiadczenie"><i class="bi bi-file-earmark-text navicon"></i> Doświadczenie</a></li>
         <li class="dropdown"><a href="#Projekty"><i class="bi bi-image navicon"></i> <span>Projekty</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -66,7 +65,7 @@
             <li><a href="python-defence.html">Python Defence</a></li>
           </ul>
         </li>
-        <li><a href="#Osiagniecia"><i class="bi bi-trophy navicon"></i> Osiągniecia</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> O mnie</a></li>
         
       </ul>
     </nav>
@@ -87,46 +86,7 @@
 
     </section><!-- /Hero Section -->
 
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>O mnie</h2>
-        <p>Cześć, nazywam się Łukasz. Jestem studentem informatyki oraz absolwentem Technikum informatycznego. Posiadam 4-miesięczne doświadczenie w branży. Mieszkam w Szczecinie. Od 2019 roku programuje gry w silniku Unity. Tworze gry komputerowe od tamtego czasu cały czas się przy tym rozwijając. Z chęcią biorę udział we wszelkich game-jamach i konkursach, w których również odnosiłem sukcesy. W wolnym czasie jestem graczem. Moimi ulubionymi gatunkami są gry akcji oraz RPG. Ćwiczę również siłowo oraz od 3 lat gram na gitarze elektrycznej.
-</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img style="width: 300px;" src="assets/img/Staporek_Lukasz_square.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>Unity Developer</h2>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Data urodzenia:</strong> <span>15 czerwca 2005</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Numer telefonu:</strong> <span>+48 532-801-369</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Miejsce zamieszkania:</strong> <span>Szczecin, Polska</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Wiek:</strong> <span>21</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Wykształcenie:</strong> <span>Średnie</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>lukasz.staporek15@gmail.com</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
+    
 
     <!-- Skills Section -->
     <section id="Umiejetnosci" class="skills section light-background">
@@ -240,7 +200,32 @@
               <p><em>Osiągniete kwalifikacje: INF.02, INF.03</em></p>
             </div><!-- Edn Resume Item -->
 
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Osiągnięcia</h3>
+            <div class="resume-item">
+              <h4 >2 Miejsce w kategorii gier mobilnych</h4>
+              <h5>06.2025</h5>
+              <p><em>Zająłem z moją drużyną znajomych top 3 w konkursie <a href="https://ztgk.pl/" >ZTGK</a> w Łodzi</em></p>
+              <p><em>Gra: <a href="sylvan-secrets.html">Sylvan Secrets</a></em></p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4 >1 Miejsce w kategorii Community Vote</h4>
+              <h5>09.2024</h5>
+              <p><em>W konkursie <a href="https://elympics.pl/gamecamp-arena-2024/" >Elympics GameCamp Arena 2024</a>, który polegał na zrobieniu gry mobilnej z użyciem ich API zająłem z moją drużyną 1 miejsce w kategorii Community Vote</em></p>
+              <p><em>Gra: <a href="sylvan-secrets.html">Sylvan Secrets</a></em></p>
+            </div><!-- Edn Resume Item -->
+            
+             <div class="resume-item">
+              <h4 >1 Miejsce w etapie wojewódzkim</h4>
+              <h5>05.2023</h5>
+              <p><em>W konkursie <a href="https://mlodzi.pti.org.pl/" >GEEK</a> organizowanym przez PTI w kategorii implementacja gry zająłem z drużyną 1 miejsce</em></p>
+              <p><em>Gra: <a href="python-defence.html">Python Defence</a></em></p>
+              </div>
           </div>
+          </div>
+
+          
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <h3 class="resume-title">Doświadczenie</h3>
@@ -310,36 +295,39 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/SylvanWalka2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Sylvan Secrets</h4>
-                  <p>2D roguelike typu Vampire Survivors z elementami sieciowymi</p>
-                  <a href="assets/img/SylvanWalka2.jpg" title="Sylvan Secrets - 2D roguelike typu Vampire Survivors z elementami sieciowymi" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/SylvanWalka2.jpg" title="Sylvan Secrets - 2D roguelike typu Vampire Survivors z elementami sieciowymi" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
                   <a href="sylvan-secrets.html" title="Szczegóły" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
+              <br>
+                <p style="text-align: center; font-weight: bold">Sylvan Secrets</p>
+                <p style="text-align: center;">2D roguelike typu Vampire Survivors z elementami sieciowymi</p>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
                 <img src="assets/img/PythonWalka2.png" class="img-fluid pydef-image" alt="">
                 <div class="portfolio-info">
-                  <h4>Python Defence</h4>
-                  <p>Gra 2D typu Tower Defence z elementami nauczania języku Python</p>
-                  <a href="assets/img/PythonWalka2.png" id="pydef" title="Python Defence - Gra 2D typu Tower Defence z elementami nauczania języku Python" data-gallery="portfolio-gallery-product" class="glightbox preview-link pydef-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/PythonWalka2.png" id="pydef" title="Python Defence - Gra 2D typu Tower Defence z elementami nauczania języku Python" data-gallery="portfolio-gallery-product" class="glightbox preview-link pydef-link"></i></a>
                   <a href="python-defence.html" title="Szczegóły" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
+                <br>
+                <p style="text-align: center; font-weight: bold">Python Defence</p>
+                <p style="text-align: center;">Gra 2D typu Tower Defence z elementami nauczania języku Python</p>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
                 <img src="assets/img/Angellevel.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>PROJECT A.N.G.E.L</h4>
-                  <p>Roguelike 3D z mechaniką dynamicznego wymieniania części ciała robota</p>
-                  <a href="assets/img/Angellevel.png" title="PROJECT A.N.G.E.L - Roguelike 3D z mechaniką dynamicznego wymieniania części ciała robota" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/Angellevel.png" title="PROJECT A.N.G.E.L - Roguelike 3D z mechaniką dynamicznego wymieniania części ciała robota" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"></a>
                   <a href="project-angel.html" title="Szczegóły" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
+              <br>
+                <p style="text-align: center; font-weight: bold">PROJECT A.N.G.E.L</p>
+                <p style="text-align: center;">Roguelike 3D z mechaniką dynamicznego wymieniania części ciała robota</p>
             </div><!-- End Portfolio Item -->
           </div><!-- End Portfolio Container -->
 
@@ -348,55 +336,46 @@
       </div>
 
     </section><!-- /Portfolio Section -->
-
-    <!-- Services Section -->
-    <section id="Osiagniecia" class="services section">
+    <!-- About Section -->
+    <section id="about" class="about section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Osiągnięcia</h2>
+        <h2>O mnie</h2>
+        <p>Cześć, nazywam się Łukasz. Jestem studentem informatyki oraz absolwentem Technikum informatycznego. Posiadam 4-miesięczne doświadczenie w branży. Mieszkam w Szczecinie. Od 2019 roku programuje gry w silniku Unity. Tworze gry komputerowe od tamtego czasu cały czas się przy tym rozwijając. Z chęcią biorę udział we wszelkich game-jamach i konkursach, w których również odnosiłem sukcesy. W wolnym czasie jestem graczem. Moimi ulubionymi gatunkami są gry akcji oraz RPG. Ćwiczę również siłowo oraz od 3 lat gram na gitarze elektrycznej.
+</p>
       </div><!-- End Section Title -->
 
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-trophy"></i></div>
-            <div>
-              <h4 class="title"><a href="https://ztgk.pl/" class="stretched-link">Top 3 w kategorii gier mobilnych</a></h4>
-              <p class="description">06.2025</p>
-              <p class="description">Zająłem z moją drużyną znajomych top 3 w konkursie ZTGK w Łodzi</p>
-              <p class="description">Gra: <a href="sylvan-secrets.html">Sylvan Secrets</a></p>
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img style="width: 300px;" src="assets/img/Staporek_Lukasz_square.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Unity Developer</h2>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Data urodzenia:</strong> <span>15 czerwca 2005</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Numer telefonu:</strong> <span>+48 532-801-369</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Miejsce zamieszkania:</strong> <span>Szczecin, Polska</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Wiek:</strong> <span>21</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Wykształcenie:</strong> <span>Średnie</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>lukasz.staporek15@gmail.com</span></li>
+                </ul>
+              </div>
             </div>
           </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-trophy"></i></div>
-            <div>
-              <h4 class="title"><a href="https://gamecamp-arena.elympics.ai/" class="stretched-link">1 Miejsce w kategorii Community Vote</a></h4>
-              <p class="description">09.2024</p>
-              <p class="description">W konkursie "Elympics GameCamp Arena 2024", który polegał na zrobieniu gry mobilnej z użyciem ich API zająłem z moją drużyną 1 miejsce w kategorii Community Vote</p>
-              <p class="description">Gra: <a href="sylvan-secrets.html">Sylvan Secrets</a></p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-trophy"></i></div>
-            <div>
-              <h4 class="title"><a href="https://mlodzi.pti.org.pl/" class="stretched-link">1 Miejsce w etapie wojewódzkim</a></h4>
-              <p class="description">05.2023</p>
-              <p class="description">W konkursie "GEEK" organizowanym przez PTI w kategorii implementacja gry zająłem z drużyną 1 miejsce</p>
-              <p class="description">Gra: <a href="python-defence.html">Python Defence</a></p>
-            </div>
-          </div><!-- End Service Item -->
-
         </div>
 
       </div>
 
-    </section><!-- /Services Section -->
+    </section><!-- /About Section -->
 
     <!-- Contact Section -->
       <section id="contact" class="contact section">
