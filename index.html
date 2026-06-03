@@ -55,20 +55,25 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#" class="active"><i class="bi bi-house navicon"></i>Strona Główna</a></li>
-        <li><a href="#Umiejetnosci"><i class="bi bi-pc-display navicon"></i> Umiejętności</a></li>
-        <li><a href="#Doswiadczenie"><i class="bi bi-file-earmark-text navicon"></i> Doświadczenie</a></li>
-        <li class="dropdown"><a href="#Projekty"><i class="bi bi-image navicon"></i> <span>Projekty</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <li><a href="#"><i class="bi bi-house navicon"></i><span data-i18n="nav-home">Home</span></a></li>
+        <li><a href="#Umiejetnosci" ><i class="bi bi-pc-display navicon"></i> <span data-i18n="nav-skills">Skills</span></a></li>
+        <li><a href="#Doswiadczenie" ><i class="bi bi-file-earmark-text navicon"></i> <span data-i18n="nav-experience">Experience</span></a></li>
+        <li class="dropdown"><a href="#Projekty"><i class="bi bi-image navicon"></i> <span data-i18n="nav-projects">Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="sylvan-secrets.html">Sylvan Secrets</a></li>
             <li><a href="project-angel.html">PROJECT A.N.G.E.L</a></li>
             <li><a href="python-defence.html">Python Defence</a></li>
           </ul>
         </li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> O mnie</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> <span data-i18n="nav-about">About</span></a></li>
         
       </ul>
     </nav>
+
+    <div class="lang-switcher" aria-label="Language switcher">
+      <button type="button" class="lang-btn active" data-lang="en" aria-label="English">🇬🇧</button>
+      <button type="button" class="lang-btn" data-lang="pl" aria-label="Polski">🇵🇱</button>
+    </div>
 
   </header>
 
@@ -81,7 +86,7 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Łukasz Stąporek</h2>
-        <p><span class="typed" data-typed-items="Unity Developer, Student Informatyki"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p><span class="typed" data-typed-items-en="Unity Developer, Computer Science Student" data-typed-items-pl="Programista Unity, Student informatyki"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
     </section><!-- /Hero Section -->
@@ -93,78 +98,78 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Umiejętności</h2>
+        <h2 data-i18n="skills-title">Skills</h2>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row">
             <div class="col-lg-6">
-              <h4>C#</h4>
+              <h4 data-i18n="skill-csharp">C#</h4>
               <ul>
-                <li>Object Oriented Programming (OOP)</li>
-                <li>Tworzenie aplikacji okienkowych za pomocą WinForms</li>
-                <li>Wykorzystanie bibliotek pomocniczych</li>
+                <li data-i18n="skill-csharp-oop">Object Oriented Programming (OOP)</li>
+                <li data-i18n="skill-csharp-winforms">Building desktop applications with WinForms</li>
+                <li data-i18n="skill-csharp-libs">Using helper libraries</li>
               </ul>
 
-              <h4>Unity Engine</h4>
+              <h4 data-i18n="skill-unity">Unity Engine</h4>
               <ul>
-                <li>Tworzenie logiki do gier 2D i 3D</li>
-                <li>Tworzenie komponentów (MonoBehaviour, ScriptableObject, events)</li>
-                <li>Podstawowy Game Design</li>
-                <li>Projektowanie scen i responsywnego UI dla gier mobilnych</li>
-                <li>Ustawianie grafik i animacji</li>
+                <li data-i18n="skill-unity-logic">Creating gameplay logic for 2D and 3D games</li>
+                <li data-i18n="skill-unity-components">Creating components (MonoBehaviour, ScriptableObject, events)</li>
+                <li data-i18n="skill-unity-design">Basic Game Design</li>
+                <li data-i18n="skill-unity-ui">Designing scenes and responsive UI for mobile games</li>
+                <li data-i18n="skill-unity-graphics">Setting up graphics and animations</li>
               </ul>
 
-              <h4>C/C++</h4>
+              <h4 data-i18n="skill-cpp">C/C++</h4>
               <ul>
-                <li>Object Oriented Programming (OOP)</li>
-                <li>Template</li>
+                <li data-i18n="skill-cpp-oop">Object Oriented Programming (OOP)</li>
+                <li data-i18n="skill-cpp-template">Template</li>
               </ul>
 
-              <h4>Git</h4>
+              <h4 data-i18n="skill-git">Git</h4>
               <ul>
-                <li>Umiejętność korzystania z systemu kontroli wersji w zespole</li>
-                <li>Znajomość systemu branchy</li>
-                <li>Rozwiązywanie konfliktów i mergowanie</li>
-                <li>GitHub</li>
+                <li data-i18n="skill-git-team">Using version control in a team</li>
+                <li data-i18n="skill-git-branches">Working with branches</li>
+                <li data-i18n="skill-git-conflicts">Resolving conflicts and merging</li>
+                <li data-i18n="skill-git-github">GitHub</li>
               </ul>
-              <h4>Języki</h4>
+              <h4 data-i18n="skills-languages">Languages</h4>
               <ul>
-                <li>Zaawansowana znajomość angielskiego</li>
-                <li>Język niemiecki na komunikatywnym poziomie</li>
+                <li data-i18n="skill-lang-english">Advanced English</li>
+                <li data-i18n="skill-lang-german">German at a communicative level</li>
               </ul>
               </ul>
           </div>
 
           <div class="col-lg-6">
-             <h4>Bazy Danych</h4>
+             <h4 data-i18n="skills-databases">Databases</h4>
               <ul>
-                <li>Podstawy zarządzania bazami danych</li>
-                <li>Tworzenie złożonych zapytań SQL</li>
-                <li>Tworzenie funkcji i indexów</li>
-                <li>Transakcje</li>
+                <li data-i18n="skill-db-basics">Database basics</li>
+                <li data-i18n="skill-db-sql">Writing advanced SQL queries</li>
+                <li data-i18n="skill-db-indexes">Creating functions and indexes</li>
+                <li data-i18n="skill-db-transactions">Transactions</li>
               </ul>
 
-              <h4>Systemy operacyjne</h4>
+              <h4 data-i18n="skills-os">Operating Systems</h4>
               <ul>
-                <li>Konserwacja i naprawa sprzętu komputerowego</li>
-                <li>Znajomość systemów operacyjnych Windows i Linux</li>
-                <li>Podstawowa znajomość Windows Server</li>
+                <li data-i18n="skill-os-maintenance">Maintenance and repair of computer hardware</li>
+                <li data-i18n="skill-os-windows">Knowledge of Windows and Linux</li>
+                <li data-i18n="skill-os-server">Basic knowledge of Windows Server</li>
               </ul>
 
-              <h4>Pozostałe</h4>
+              <h4 data-i18n="skills-other">Other</h4>
               <ul>
-                <li>Konserwacja i naprawa sprzętu komputerowego</li>
-                <li>Algorytmy i struktury danych</li>
-                <li>Podstawy Unreal Engine 5 (Blueprint)</li>
-                <li>Znajomość MS-Office</li>
+                <li data-i18n="skill-other-hardware">Computer hardware maintenance</li>
+                <li data-i18n="skill-other-algorithms">Algorithms and data structures</li>
+                <li data-i18n="skill-other-unreal">Basic Unreal Engine 5 (Blueprint)</li>
+                <li data-i18n="skill-other-office">MS-Office knowledge</li>
               </ul>
-              <h4>Umiejętności miękkie</h4>
+              <h4 data-i18n="skills-soft">Soft skills</h4>
               <ul>
-                <li>Praca w zespole</li>
-                <li>Komunikatywność</li>
-                <li>Szybkie uczenie się</li>
+                <li data-i18n="skill-soft-team">Teamwork</li>
+                <li data-i18n="skill-soft-communication">Communication</li>
+                <li data-i18n="skill-soft-learning">Fast learning</li>
               </ul>
           </div>
         </div>
@@ -177,7 +182,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Doświadczenie</h2>
+        <h2 data-i18n="experience-title">Experience</h2>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -185,89 +190,93 @@
         <div class="row">
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Edukacja</h3>
+            <h3 class="resume-title" data-i18n="resume-education">Education</h3>
             <div class="resume-item">
-              <h4>Zachodniopomorski Uniwersytet Technologiczny w Szczecinie</h4>
-              <h5>2024 - obecnie</h5>
-              <p><em>Wydział Informatyki</em></p>
-              <p><em>Specjalizacja: Inżynieria Oprogramowania</em></p>
+              <h4 data-i18n="resume-uni-name">West Pomeranian University of Technology, Szczecin</h4>
+              <h5 data-i18n="resume-uni-years">2024 - present</h5>
+              <p><em data-i18n="resume-uni-faculty">Faculty of Computer Science</em></p>
+              <p><em data-i18n="resume-uni-specialization">Specialization: Software Engineering</em></p>
             </div><!-- Edn Resume Item -->
 
             <div class="resume-item">
-              <h4>Technikum Informatyczne SCI w Szczecinie</h4>
-              <h5>2019 - 2024</h5>
-              <p><em>Zdobyty tytuł: Technik Informatyk</em></p>
-              <p><em>Osiągniete kwalifikacje: INF.02, INF.03</em></p>
+              <h4 data-i18n="resume-school-name">IT Technical School SCI, Szczecin</h4>
+              <h5 data-i18n="resume-school-years">2019 - 2024</h5>
+              <p><em data-i18n="resume-school-title">Title obtained: IT Technician</em></p>
+              <p><em data-i18n="resume-school-qual">Qualifications: INF.02, INF.03</em></p>
             </div><!-- Edn Resume Item -->
 
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Osiągnięcia</h3>
+            <h3 class="resume-title" data-i18n="resume-achievements">Achievements</h3>
             <div class="resume-item">
-              <h4 >2 Miejsce w kategorii gier mobilnych</h4>
-              <h5>06.2025</h5>
-              <p><em>Zająłem z moją drużyną znajomych top 3 w konkursie <a href="https://ztgk.pl/" >ZTGK</a> w Łodzi</em></p>
-              <p><em>Gra: <a href="sylvan-secrets.html">Sylvan Secrets</a></em></p>
+              <h4 data-i18n="achievement-ztgk-title">2nd place in the mobile games category</h4>
+              <h5 data-i18n="achievement-ztgk-date">06.2025</h5>
+              <p><em data-i18n="achievement-ztgk-text">I placed top 3 with my team in the ZTGK competition in Łódź</em></p>
+              <p><em data-i18n="achievement-ztgk-game">Game: </em><a href="sylvan-secrets.html"> Sylvan Secrets</a></p>
+              <p><em data-i18n="achievement-ztgk-comp">Competition:</em><a href="https://ztgk.pl/"> ZTGK</a> </p>
             </div><!-- Edn Resume Item -->
 
             <div class="resume-item">
-              <h4 >1 Miejsce w kategorii Community Vote</h4>
-              <h5>09.2024</h5>
-              <p><em>W konkursie <a href="https://elympics.pl/gamecamp-arena-2024/" >Elympics GameCamp Arena 2024</a>, który polegał na zrobieniu gry mobilnej z użyciem ich API zająłem z moją drużyną 1 miejsce w kategorii Community Vote</em></p>
-              <p><em>Gra: <a href="sylvan-secrets.html">Sylvan Secrets</a></em></p>
+              <h4 data-i18n="achievement-elympics-title">1st place in Community Vote</h4>
+              <h5 data-i18n="achievement-elympics-date">09.2024</h5>
+              <p><em data-i18n="achievement-elympics-text">In the Elympics GameCamp Arena 2024</a> competition, where the task was to create a mobile game using their API, my team won 1st place in the Community Vote category</em></p>
+              <p><em data-i18n="achievement-elympics-game">Game: </em><a href="sylvan-secrets.html"> Sylvan Secrets</a></p>
+              <p><em data-i18n="achievement-elympics-comp">Competition:</em><a href="https://elympics.pl/"> Elympics GameCamp Arena</a> </p>
             </div><!-- Edn Resume Item -->
             
              <div class="resume-item">
-              <h4 >1 Miejsce w etapie wojewódzkim</h4>
-              <h5>05.2023</h5>
-              <p><em>W konkursie <a href="https://mlodzi.pti.org.pl/" >GEEK</a> organizowanym przez PTI w kategorii implementacja gry zająłem z drużyną 1 miejsce</em></p>
-              <p><em>Gra: <a href="python-defence.html">Python Defence</a></em></p>
-              </div>
+              <h4 data-i18n="achievement-geek-title">1st place at the regional stage</h4>
+              <h5 data-i18n="achievement-geek-date">05.2023</h5>
+              <p><em data-i18n="achievement-geek-text">In the GEEK competition organized by PTI in the game implementation category, my team won 1st place</em></p>
+              <p><em data-i18n="achievement-geek-game">Game: <a href="python-defence.html">Python Defence</a></em></p>
+              <p><em data-i18n="achievement-geek-comp">Competition:</em><a href="https://mlodzi.pti.org.pl/"> GEEK</a> </p>
+            </div><!-- Edn Resume Item -->
           </div>
           </div>
 
           
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Doświadczenie</h3>
+            <h3 class="resume-title" data-i18n="resume-work">Work Experience</h3>
             <div class="resume-item">
-              <h4>Junior Unity Developer</h4>
-              <p><em>Fabryka Gier</em></p>
-              <h5>11.2025 - 01.2025</h5>
+              <h4 data-i18n="exp-junior-role">Junior Unity Developer</h4>
+              <p><em data-i18n="exp-junior-company">Fabryka Gier</em></p>
+              <h5 data-i18n="exp-junior-dates">11.2025 - 01.2025</h5>
               <ul>
-                <li>Tworzenie prototypu gry 2D</li>
-                <li>Programowanie głównych systemów rozgrywki</li>
-                <li>Projektowanie responsywnego i skalowalnego UI</li>
-                <li>Mentoring od Senior Developerów</li>
-                <li>Współpraca z QA oraz Designerami</li>
-                <li>Aktywne używanie systemu kontroli wersji Git</li>
-                <li>Praca w 2-osobowym zespole</li>
+                <li data-i18n="exp-junior-prototype">Creating a 2D game prototype</li>
+                <li data-i18n="exp-junior-systems">Programming the main gameplay systems</li>
+                <li data-i18n="exp-junior-ui">Designing responsive and scalable UI</li>
+                <li data-i18n="exp-junior-mentoring">Mentoring from senior developers</li>
+                <li data-i18n="exp-junior-qa">Working with QA and designers</li>
+                <li data-i18n="exp-junior-git">Active use of Git version control</li>
+                <li data-i18n="exp-junior-team">Working in a small team</li>
               </ul>
             </div><!-- Edn Resume Item -->
 
             <div class="resume-item">
-              <h4>Intern Unity Developer</h4>
-              <p><em>Fabryka Gier</em></p>
-              <h5>08.2025 - 09.2025</h5>
+              <h4 data-i18n="exp-intern-role">Intern Unity Developer</h4>
+              <p><em data-i18n="exp-intern-company">Fabryka Gier</em></p>
+              <h5 data-i18n="exp-intern-dates">08.2025 - 09.2025</h5>
               <ul>
-                <li>Tworzenie projektu gry 3D</li>
-                <li>Programowanie głównych systemów rozgrywki </li>
-                <li>Programowanie AI przeciwników</li>
-                <li>Mentoring od Senior Developerów</li>
-                <li>Code review</li>
-                <li>Aktywne używanie systemu kontroli wersji Git</li>
-                <li>Praca w 6-osobowym zespole</li>
+                <li data-i18n="exp-intern-project">Creating a 3D game project</li>
+                <li data-i18n="exp-intern-systems">Programming the main gameplay systems</li>
+                <li data-i18n="exp-intern-ai">Programming enemy AI</li>
+                <li data-i18n="exp-intern-mentoring">Mentoring from senior developers</li>
+                <li data-i18n="exp-intern-review">Code review</li>
+                <li data-i18n="exp-intern-git">Active use of Git version control</li>
+                <li data-i18n="exp-intern-team">Working in a 6-person team</li>
+                <p><em data-i18n="exp-intern-project">Stworzona gra: </em><a href="project-angel.html">PROJECT A.N.G.E.L</a></p>
               </ul>
             </div><!-- Edn Resume Item -->
 
              <div class="resume-item">
-              <h4>Serwisant sprzętu komputerowego - Stażysta</h4>
-              <p><em>Digitalcomp</em></p>
-              <h5>07.2022 - 08.2022</h5>
+              <h4 data-i18n="exp-hardware-role">Computer Hardware Technician - Intern</h4>
+              <p><em data-i18n="exp-hardware-company">Digitalcomp</em></p>
+              <h5 data-i18n="exp-hardware-dates">07.2022 - 08.2022</h5>
               <ul>
-                <li>Konserwacja i naprawa sprzętu komputerowego</li>
-                <li>Wykrywanie usterek</li>
-                <li>Obsługa systemu do zarządzania zamówieniami</li>
-                <li>Obsługa klientów</li>
+                <li data-i18n="exp-hardware-maintain">Maintaining and repairing computer hardware</li>
+                <li data-i18n="exp-hardware-faults">Detecting faults</li>
+                <li data-i18n="exp-hardware-orders">Using an order management system</li>
+                <li data-i18n="exp-hardware-service">Customer service</li>
               </ul>
             </div><!-- Edn Resume Item -->
           </div>
@@ -281,8 +290,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Projekty</h2>
-        <p>Poniżej można znaleźć moje najważniejsze projekty. Klinij na projekt, aby zobaczyć szczegółowe informacje: Krótki opis, użyte technologie, zwiastun, link do repozytorium oraz kolaboratorów</p>
+        <h2 data-i18n="projects-title">Projects</h2>
+        <p data-i18n="project-intro">Below you can find my main projects. Click on a project to see detailed information: a short description, used technologies, trailer, repository link, and collaborators.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -301,7 +310,7 @@
               </div>
               <br>
                 <p style="text-align: center; font-weight: bold">Sylvan Secrets</p>
-                <p style="text-align: center;">2D roguelike typu Vampire Survivors z elementami sieciowymi</p>
+                <p style="text-align: center;" data-i18n="project-card-sylvan-desc">A 2D Vampire Survivors-style roguelike with online elements</p>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
@@ -314,7 +323,7 @@
               </div>
                 <br>
                 <p style="text-align: center; font-weight: bold">Python Defence</p>
-                <p style="text-align: center;">Gra 2D typu Tower Defence z elementami nauczania języku Python</p>
+                <p style="text-align: center;" data-i18n="project-card-python-desc">A 2D Tower Defence game with Python learning elements</p>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
@@ -327,7 +336,7 @@
               </div>
               <br>
                 <p style="text-align: center; font-weight: bold">PROJECT A.N.G.E.L</p>
-                <p style="text-align: center;">Roguelike 3D z mechaniką dynamicznego wymieniania części ciała robota</p>
+                <p style="text-align: center;" data-i18n="project-card-angel-desc">A 3D roguelike with dynamic robot body-part swapping mechanics</p>
             </div><!-- End Portfolio Item -->
           </div><!-- End Portfolio Container -->
 
@@ -341,8 +350,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>O mnie</h2>
-        <p>Cześć, nazywam się Łukasz. Jestem studentem informatyki oraz absolwentem Technikum informatycznego. Posiadam 4-miesięczne doświadczenie w branży. Mieszkam w Szczecinie. Od 2019 roku programuje gry w silniku Unity. Tworze gry komputerowe od tamtego czasu cały czas się przy tym rozwijając. Z chęcią biorę udział we wszelkich game-jamach i konkursach, w których również odnosiłem sukcesy. W wolnym czasie jestem graczem. Moimi ulubionymi gatunkami są gry akcji oraz RPG. Ćwiczę również siłowo oraz od 3 lat gram na gitarze elektrycznej.
+        <h2 data-i18n="about-title">About me</h2>
+        <p data-i18n="about-intro">Hi, I’m Łukasz. I’m a Computer Science student and a graduate of an IT technical school. I have 4 months of professional experience in the industry. I live in Szczecin. Since 2019, I have been programming games in Unity. I create computer games while constantly developing my skills. I enjoy taking part in game jams and competitions, where I have also achieved success. In my free time, I am a gamer. My favourite genres are action and RPG games. I also train strength and have been playing electric guitar for 3 years.
 </p>
       </div><!-- End Section Title -->
 
@@ -353,20 +362,20 @@
             <img style="width: 300px;" src="assets/img/Staporek_Lukasz_square.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
-            <h2>Unity Developer</h2>
+            <h2 data-i18n="about-role">Unity Developer</h2>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Data urodzenia:</strong> <span>15 czerwca 2005</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Numer telefonu:</strong> <span>+48 532-801-369</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Miejsce zamieszkania:</strong> <span>Szczecin, Polska</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="label-dob">Date of birth:</strong> <span>15.06.2005</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="label-phone">Phone:</strong> <span>+48 532-801-369</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="label-location">Location:</strong> <span data-i18n="label-location2">Szczecin, Poland</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Wiek:</strong> <span>21</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Wykształcenie:</strong> <span>Średnie</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>lukasz.staporek15@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="label-age">Age:</strong> <span>21</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="label-education">Education:</strong> <span data-i18n="label-sec">Secondary</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="label-email">Email:</strong> <span>lukasz.staporek15@gmail.com</span></li>
                 </ul>
               </div>
             </div>
@@ -382,9 +391,9 @@
 
           <!-- Section Title -->
           <div class="container section-title" data-aos="fade-up">
-              <h2>Kontakt</h2>
-              <p>
-                  Dzięki za odwiedzenie mojej strony! Jeśli masz pytania, bądź chcesz się skontaktować niżej są metody w jaki sposób można się ze mną skontaktować. Do usłyszenia!
+              <h2 data-i18n="contact-title">Contact</h2>
+              <p data-i18n="contact-intro">
+                  Thank you for visiting my website! If you have any questions or would like to get in touch, below are the ways you can contact me. See you soon!
               </p>
           </div><!-- End Section Title -->
 
@@ -399,13 +408,13 @@
 
                           <div class="info-item d-flex align-items-start flex-column flex-grow-1 text-center" data-aos="fade-up" data-aos-delay="200">
                               <i class="bi bi-phone mb-2" style="font-size: 2rem;"></i>
-                              <h3>Zadzwoń</h3>
+                              <h3 data-i18n="contact-call">Call</h3>
                               <p>+48 532-801-369</p>
                           </div>
 
                           <div class="info-item d-flex align-items-start flex-column flex-grow-1 text-center" data-aos="fade-up" data-aos-delay="400">
                               <i class="bi bi-envelope mb-2" style="font-size: 2rem;"></i>
-                              <h3>Napisz</h3>
+                              <h3 data-i18n="contact-write">Write</h3>
                               <p>lukasz.staporek15@gmail.com</p>
                           </div>
 

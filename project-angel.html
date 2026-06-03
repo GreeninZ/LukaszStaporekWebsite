@@ -55,20 +55,25 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="index.html" class="active"><i class="bi bi-house navicon"></i>Strona Główna</a></li>
-        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> O mnie</a></li>
-        <li><a href="index.html#Umiejetnosci"><i class="bi bi-pc-display navicon"></i> Umiejętności</a></li>
-        <li><a href="index.html#Doswiadczenie"><i class="bi bi-file-earmark-text navicon"></i> Doświadczenie</a></li>
-        <li class="dropdown"><a href="index.html#Projekty"><i class="bi bi-image navicon"></i> <span>Projekty</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <li><a href="index.html#"><i class="bi bi-house navicon"></i><span data-i18n="nav-home">Home</span></a></li>
+        <li><a href="index.html#Umiejetnosci" ><i class="bi bi-pc-display navicon"></i> <span data-i18n="nav-skills">Skills</span></a></li>
+        <li><a href="index.html#Doswiadczenie" ><i class="bi bi-file-earmark-text navicon"></i> <span data-i18n="nav-experience">Experience</span></a></li>
+        <li class="dropdown"><a href="index.html#Projekty"><i class="bi bi-image navicon"></i> <span data-i18n="nav-projects">Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="sylvan-secrets.html">Sylvan Secrets</a></li>
             <li><a href="project-angel.html">PROJECT A.N.G.E.L</a></li>
             <li><a href="python-defence.html">Python Defence</a></li>
           </ul>
         </li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> <span data-i18n="nav-about">About</span></a></li>
         
       </ul>
     </nav>
+
+    <div class="lang-switcher" aria-label="Language switcher">
+      <button type="button" class="lang-btn active" data-lang="en" aria-label="English">🇬🇧</button>
+      <button type="button" class="lang-btn" data-lang="pl" aria-label="Polski">🇵🇱</button>
+    </div>
 
   </header>
 
@@ -77,10 +82,10 @@
     <!-- Page Title -->
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">PROJECT A.N.G.E.L</h1>
+        <h1 class="mb-2 mb-lg-0" data-i18n="project-angel-title">PROJECT A.N.G.E.L</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="index.html" data-i18n="project-home-breadcrumb">Home</a></li>
             <li class="current">PROJECT A.N.G.E.L</li>
           </ol>
         </nav>
@@ -142,18 +147,18 @@
 
           <div class="col-lg-4">
             <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>PROJECT A.N.G.E.L</h3>
+              <h3 data-i18n="project-angel-title">PROJECT A.N.G.E.L</h3>
               <ul>
-                <li><strong>Silnik</strong>: Unity</li>
-                <li><strong>Typ</strong>: 3D Roguelike dungeon crawler</li>
-                <li><strong>Repozytorium</strong>: <a href="https://github.com/Bartex890/Project-ANGEL">GitHub</a></li>
-                <li><strong>Zwiastun</strong>: <a href="https://www.youtube.com/watch?v=BrYjREzPXGg">Youtube</a></li>
+                <li><strong data-i18n="label-engine">Engine</strong>: Unity</li>
+                <li><strong data-i18n="label-type">Type</strong>: 3D Roguelike dungeon crawler</li>
+                <li><strong data-i18n="label-repository">Repository</strong>: <a href="https://github.com/Bartex890/Project-ANGEL">GitHub</a></li>
+                <li><strong data-i18n="label-gameplay">Gameplay</strong>: <a href="https://www.youtube.com/watch?v=BrYjREzPXGg">Youtube</a></li>
               </ul>
             </div>
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <p>
-                PROJECT A.N.G.E.L to gra 3D roguelike typu dungeon crawler stworzona podczas praktyk z moim zespołem 6 osób. Gra została stworzona w Unity i była rozwijana około miesiąca. W grze wcielamy się w robota, który ma na celu obalenie zbuntowanego AI. Unikalną mechaniką w tej grze jest możliwość dynamicznego zmieniania części ciała robota, którym gramy lub całkowite przeskoczenie z ciała na ciało. W grze jest dostępnych pare części ciała każdego rodzaju, aby możliwych permutacji było jak najwięcej, a gracz miał zróżnicowaną rozgrywkę. Moim zadaniem w zespole była implementacja m.in mechaniki wymieniania części ciała, integracja częsci z systemem ekwipunku oraz AI przeciwników za pomocą State Machine, które było największym wyzwaniem. Gra jest we wczesnej fazie rozwoju. Projekt ten był dla mnie świetną okazją do poznania realiów branży, gdzie mieliśmy zapewniony mentoring od seniorów oraz przeprowadzane code review.<br><br>
-                Skład zespołu:<br>
+              <p data-i18n-html="project-angel-description">
+                PROJECT A.N.G.E.L is a 3D roguelike dungeon crawler created during an internship with my 6-person team. The game was created in Unity and developed for about a month. In the game, we play as a robot whose goal is to defeat a rebel AI. The unique mechanic of the game is the ability to dynamically swap robot body parts or fully switch bodies. There are several parts of each type available, giving the player many possible combinations and varied gameplay. My responsibilities in the team included implementing body-part swapping, integrating parts with the inventory system, and enemy AI using State Machines, which was the biggest challenge. The game is in an early development stage. This project was a great opportunity for me to learn how the industry works, with mentoring from seniors and regular code reviews.<br><br>
+                Team:<br>
                 - Łukasz Stąporek<br>
                 - Bartosz Kułakowski<br>
                 - Dominik Sieklucki<br>
